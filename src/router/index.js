@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from '../views/Home.vue'
-import MealList from '../views/MealList.vue'
+import MealDetails from '../views/MealDetails.vue'
 import MealsByName from '../views/MealsByName.vue'
 import MealsByLetter from '../views/MealsByLetter.vue'
 import MealsByIngredient from '../views/MealsByIngredient.vue'
@@ -22,7 +22,7 @@ const routes = [
         component:MealsByName
       },
       {
-        path:'/by-name/:letter?',
+        path:'/by-letter/:letter?',
         name:"byLetter",
         component:MealsByLetter
       },
@@ -31,11 +31,11 @@ const routes = [
         name:"byIngredient",
         component:MealsByIngredient
       }, 
-      // {
-      //   path:'/letter/:letter',
-      //   name:"byLetter",
-      //   component:MealList
-      // }
+      {
+        path:'/meal/:id',
+        name:"mealDetails",
+        component:MealDetails
+      }
     ]
   },
 

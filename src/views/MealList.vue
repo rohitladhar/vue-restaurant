@@ -1,7 +1,7 @@
 <template>
-<div>
-  Meal List  
-</div>
+  <div>
+    Meal List  
+  </div>
 </template>
 
 <script setup>
