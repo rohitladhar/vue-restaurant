@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import YoutubeButton from '../components/youtubebutton.vue'
+import YoutubeButton from './youtubebutton.vue'
 const {meal} = defineProps({
     meal:{
         required:true,

@@ -22,7 +22,7 @@ import { computed} from '@vue/reactivity'
 import {onMounted, ref} from 'vue';
 import store from '../store';
 import {useRoute} from 'vue-router';
-import MealItem from '../components/mealitem.vue';
+import MealItem from '../components/MealItem.vue';
 const keyword = ref('')
 
 const route = useRoute();

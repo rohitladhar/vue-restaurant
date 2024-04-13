@@ -13,7 +13,7 @@ import store from '../store';
 import {computed} from '@vue/reactivity';
 import {onMounted,watch} from 'vue';
 import {useRoute} from 'vue-router';
-import MealItem from '../components/mealitem.vue'
+import MealItem from '../components/MealItem.vue'
 const route = useRoute()
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split("");
 const meals = computed(()=>store.state.mealsByLetter)   

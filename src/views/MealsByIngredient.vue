@@ -13,7 +13,7 @@ import {onMounted,ref} from 'vue';
 import {useRoute} from 'vue-router'
 import {computed} from '@vue/reactivity'
 import store from '../store'
-import MealItem from '../components/mealitem.vue'
+import MealItem from '../components/MealItem.vue'
 const route = useRoute()
 const meals = computed(()=>store.state.mealsByIngredient)
 
