@@ -8,15 +8,15 @@
                 <p class="m-2">
                     Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text Dummy Text
                 </p>
-                <div class="m-2 flex items-center justify-between">
+                <!-- <div class="m-2 flex items-center justify-between">
                     <YoutubeButton :href="meal.strYoutube">Youtube</YoutubeButton>
-                </div>
+                </div> -->
             </div>
         </div>
 </template>
 
 <script setup>
-import YoutubeButton from './youtubebutton.vue'
+// import YoutubeButton from './youtubebutton.vue'
 const {meal} = defineProps({
     meal:{
         required:true,

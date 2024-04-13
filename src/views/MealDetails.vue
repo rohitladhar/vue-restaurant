@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div class="mt-4">
-                <YoutubeButton :href="meal.strYoutube">Go to Youtube</YoutubeButton>
+                <!-- <YoutubeButton :href="meal.strYoutube">Go to Youtube</YoutubeButton> -->
                 <template v-if="meal.strSource">
                     <a :href="meal.strSource" target="_blank" class="px-3 py-2 ml-5 rounded border-2 text-white bg-indigo-600 transition-colors">
                     View Original Source
@@ -58,7 +58,7 @@ import {ref,onMounted} from 'vue';
 
 import {useRoute} from "vue-router";
 import axiosClient from '../axiosClient';
-import YoutubeButton from '../components/youtubebutton.vue';
+// import YoutubeButton from '../components/youtubebutton.vue';
 
 const route = useRoute();
 const meal = ref({})
